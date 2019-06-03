@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+    <article class="media content-section">
+        <img class="rounded_circle article-img" src="{{ image_file }}">
+        <div class="media-body">
+            <div class="article-metadata">
+                <a class="mr-2" href="#">{{ user.username }}</a>
+            </div>
+            <h2><p class="article-title">Prediction</p></h2>
+            <p class="article-content">{{ result }}</p>
+        </div>
+    </article>
+
+{% endblock content %}
